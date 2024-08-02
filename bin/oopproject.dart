@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:math';
 import 'insertNewEmployee.dart';
 import 'employees.dart';
 import 'updateEmployyesSalary.dart';
@@ -46,14 +45,6 @@ void main() {
           deletEmployees(
               employees); //here i used the funtion from UpdatePostions file kindly check the fail to understant the function
         case "6":
-        case "7":
-          print("Kindly enter the ID number: ");
-          var checkID = stdin.readLineSync()!;
-          for (var elment in employyes) {
-            if (elment.id == checkID) {
-              elment.viewEmp();
-            }
-          }
       }
     } else if (input == "q") {
       break;

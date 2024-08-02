@@ -17,7 +17,7 @@ class Employee {
 //this function will view all the data for employes
   void viewEmp() {
     print(
-        "Employee Id :$id \n Employee name: $name \n employee Salary:$salary \n employee Postion: $postion \n Job decription:$jobDescription \n ermissions: ${permissions.join(', ')}");
+        "Employee Id :$id \n Employee name: $name \n employee Salary:$salary \n employee Postion: $postion \n Job decription:$jobDescription \n ermissions: ${permissions.toString()}");
     print("----------------------------------");
   }
 }

@@ -4,7 +4,6 @@ import 'employees.dart';
 
 //here i used list to store all the data
 insertNewEmployee(List<Employee> employees) {
-  List<Employee> employyes = [];
   print("please enter the name: ");
   var name = stdin.readLineSync()!;
   print("please enter Salary: ");
@@ -13,6 +12,8 @@ insertNewEmployee(List<Employee> employees) {
   var postion = stdin.readLineSync()!;
   print("please enter the job descriptions: ");
   var jobDesicption = stdin.readLineSync()!;
+  print("please enter the job permissions: ");
+  List permissions = stdin.readLineSync()!.split(',');
   var id = Random().nextInt(9999).toString();
   Employee newEmployee = Employee(
       id: id,
@@ -20,6 +21,7 @@ insertNewEmployee(List<Employee> employees) {
       salary: salary,
       postion: postion,
       jobDescription: jobDesicption,
-      permissions: []);
-  employyes.add(newEmployee);
+      permissions: permissions);
+  employees.add(newEmployee);
+  print("employee added ");
 }
