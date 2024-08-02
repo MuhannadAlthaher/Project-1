@@ -4,7 +4,8 @@ import 'insertNewEmployee.dart';
 import 'employees.dart';
 import 'updateEmployyesSalary.dart';
 import 'viewEmployees.dart';
-import 'updateEmployyesSalary.dart';
+import 'updatePostions.dart';
+import 'deletEmployees.dart';
 
 void main() {
   print("|-----Welcome------|");
@@ -19,6 +20,7 @@ void main() {
     print("3.Update emploeyy Salary ");
     print("4.Update  emploeyy postions");
     print("5.Delte  emploeyy");
+    print("6.change permissions");
     print("Enter q to close the app");
     String input = stdin.readLineSync()!;
     if (input == "1" ||
@@ -29,40 +31,21 @@ void main() {
       switch (input) {
         case "1":
           insertNewEmployee(
-              employees); //here i used the funtion from InsertNewemployee faile kindly check the fail to understant the function
+              employees); //here i used the funtion from InsertNewemployee file kindly check the fail to understant the function
 
         case "2":
           viewEmploiyees(
-              employees); //here i used the funtion from viewEmployyes faile kindly check the fail to understant the function
+              employees); //here i used the funtion from viewEmployyes file kindly check the fail to understant the function
         case "3":
           updateSalary(
-              employees); //here i used the funtion from updateEmployeeSlary faile kindly check the fail to understant the function
+              employees); //here i used the funtion from updateEmployeeSlary file kindly check the fail to understant the function
         case "4":
-          print("Kindly enter the ID number: ");
-          var checkID = stdin.readLineSync()!;
-          for (var elment in employyes) {
-            if (elment.id == checkID) {
-              print("kindly change the current Postion");
-              var updatePostion = stdin.readLineSync()!;
-              elment.postion = updatePostion;
-            }
-          }
+          updatePostion(
+              employees); //here i used the funtion from UpdatePostions file kindly check the fail to understant the function
         case "5":
-          print("Kindly enter the ID number: ");
-          var checkID = stdin.readLineSync()!;
-          for (var elment in employyes) {
-            if (elment.id == checkID) {
-              print("kindly change the current name");
-              var updateName = stdin.readLineSync()!;
-              elment.name = updateName;
-            }
-          }
+          deletEmployees(
+              employees); //here i used the funtion from UpdatePostions file kindly check the fail to understant the function
         case "6":
-          print("Kindly enter the ID number: ");
-          var checkID = stdin.readLineSync()!;
-
-          employyes.removeWhere((employyes) => employyes.id == checkID);
-
         case "7":
           print("Kindly enter the ID number: ");
           var checkID = stdin.readLineSync()!;
