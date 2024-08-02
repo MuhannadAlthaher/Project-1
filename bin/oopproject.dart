@@ -5,6 +5,7 @@ import 'updateEmployyesSalary.dart';
 import 'viewEmployees.dart';
 import 'updatePostions.dart';
 import 'deletEmployees.dart';
+import 'changePermissions.dart';
 
 void main() {
   print("|-----Welcome------|");
@@ -26,7 +27,8 @@ void main() {
         input == "2" ||
         input == "3" ||
         input == "4" ||
-        input == "5") {
+        input == "5" ||
+        input == "6") {
       switch (input) {
         case "1":
           insertNewEmployee(
@@ -45,6 +47,7 @@ void main() {
           deletEmployees(
               employees); //here i used the funtion from UpdatePostions file kindly check the fail to understant the function
         case "6":
+          changePermissions(employees);
       }
     } else if (input == "q") {
       break;
