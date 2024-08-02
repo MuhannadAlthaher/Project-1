@@ -1,7 +1,8 @@
 import 'dart:io';
 import 'dart:math';
 import 'employees.dart';
-insertNewEmployee() {
+//here i used list to store all the data 
+insertNewEmployee(List<Employee> employees) {
   List<Employee> employyes = [];
   print("please enter the name: ");
   var name = stdin.readLineSync()!;
