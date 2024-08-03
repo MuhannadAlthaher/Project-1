@@ -26,8 +26,8 @@ void main() {
     print("7.change job descriptions ");
     print("Enter q to close the app");
     String input = stdin.readLineSync()!;
-    if (input ==
-            "1" || //checking if the user input correct it will pass the comdtion
+    //checking if the user input correct it will pass the comdtion
+    if (input == "1" ||
         input == "2" ||
         input == "3" ||
         input == "4" ||
