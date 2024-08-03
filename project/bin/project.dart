@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   print("|-----Welcome------|");
   print("|-------TO---------|");
@@ -16,5 +18,40 @@ void main() {
     print("7.change job descriptions ");
     print("Enter q to close the app");
     String input = stdin.readLineSync()!;
+    if (input == "1" ||
+        input == "2" ||
+        input == "3" ||
+        input == "4" ||
+        input == "5" ||
+        input == "6" ||
+        input == "7") {
+      switch (input) {
+        //Sitched the user input
+        case "1":
+          insertNewEmployee(
+              employees); //here i used the funtion from InsertNewemployee file kindly check the fail to understant the function
+
+        case "2":
+          viewEmploiyees(
+              employees); //here i used the funtion from viewEmployyes file kindly check the fail to understant the function
+        case "3":
+          updateSalary(
+              employees); //here i used the funtion from updateEmployeeSlary file kindly check the fail to understant the function
+        case "4":
+          updatePostion(
+              employees); //here i used the funtion from UpdatePostions file kindly check the fail to understant the function
+        case "5":
+          deletEmployees(
+              employees); //here i used the funtion from UpdatePostions file kindly check the fail to understant the function
+        case "6":
+          changePermissions(employees);
+        case "7":
+          changeJobDescriptions(
+              employees); //here i used the funtion from changeJobDescriptions file kindly check the fail to understant the function
+      }
+    } else if (input == "q") {
+      //if the input was q it will break the app and
+      break;
+    }
   }
 }
