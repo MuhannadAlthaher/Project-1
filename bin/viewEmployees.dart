@@ -7,7 +7,6 @@ viewEmploiyees(List<Employee> employyes) {
   } else {
     for (var element in employyes) {
       element.viewEmp();
-      
     }
   }
 }

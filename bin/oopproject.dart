@@ -6,13 +6,15 @@ import 'viewEmployees.dart';
 import 'updatePostions.dart';
 import 'deletEmployees.dart';
 import 'changePermissions.dart';
+import 'updateeJobDescrtipon.dart';
 
 void main() {
   print("|-----Welcome------|");
   print("|-------TO---------|");
   print("|-----Muhannad-----|");
   print("|-----Company------|");
-  List<Employee> employees = [];
+  List<Employee> employees =
+      []; //here i used class inside list to store objects inside list
   while (true) {
     print("please chose your choice");
     print("1.Add new emploeyy");
@@ -50,8 +52,9 @@ void main() {
               employees); //here i used the funtion from UpdatePostions file kindly check the fail to understant the function
         case "6":
           changePermissions(employees);
-        case"7":
-          
+        case "7":
+          changeJobDescriptions(
+              employees); //here i used the funtion from changeJobDescriptions file kindly check the fail to understant the function
       }
     } else if (input == "q") {
       break;

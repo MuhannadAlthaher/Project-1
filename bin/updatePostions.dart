@@ -10,7 +10,7 @@ updatePostion(List<Employee> employyes) {
   for (var elment in employyes) {
     if (elment.id == checkID) {
       //and here the elment in pleace of the id that we need to find in the list
-      print("kindly change the current Salary");
+      print("kindly change the current postion");
       var changePostion = stdin.readLineSync()!;
       elment.postion =
           changePostion; //here the elemnt in pleace of the object that we need to change with the new varible
