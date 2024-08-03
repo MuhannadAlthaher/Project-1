@@ -1,4 +1,12 @@
 import 'dart:io';
+import '../functions/changePermissions.dart';
+import '../functions/deletEmployees.dart';
+import '../functions/insertNewEmployee.dart';
+import '../functions/updateEmployyesSalary.dart';
+import '../functions/updatePostions.dart';
+import '../functions/updateeJobDescrtipon.dart';
+import '../functions/viewEmployees.dart';
+import '../modules/employees.dart';
 
 void main() {
   print("|-----Welcome------|");
