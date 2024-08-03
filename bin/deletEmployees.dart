@@ -7,4 +7,6 @@ deletEmployees(List<Employee> employyes) {
   var checkID = stdin.readLineSync()!;
 
   employyes.removeWhere((employyes) => employyes.id == checkID);
+  print("employee deleted succffuly");
+  print("____________________________________");
 }

@@ -14,6 +14,8 @@ updatePostion(List<Employee> employyes) {
       var changePostion = stdin.readLineSync()!;
       elment.postion =
           changePostion; //here the elemnt in pleace of the object that we need to change with the new varible
+      print("Postion changed succffuly");
+      print("____________________________________");
     }
   }
 }

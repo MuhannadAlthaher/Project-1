@@ -14,7 +14,9 @@ insertNewEmployee(List<Employee> employees) {
   var jobDesicption = stdin.readLineSync()!;
   print("please enter the job permissions: ");
   List permissions = stdin.readLineSync()!.split(',');
-  var id = Random().nextInt(9999).toString();//here i used random to ganarate random ID 
+  var id = Random()
+      .nextInt(9999)
+      .toString(); //here i used random to ganarate random ID
   Employee newEmployee = Employee(
       id: id,
       name: name,
@@ -24,4 +26,5 @@ insertNewEmployee(List<Employee> employees) {
       permissions: permissions);
   employees.add(newEmployee);
   print("employee added ");
+  print("________________________");
 }

@@ -14,6 +14,8 @@ updateSalary(List<Employee> employyes) {
       var changSalary = stdin.readLineSync()!;
       elment.salary =
           changSalary; //here the elemnt in pleace of the object that we need to change with the new varible
+      print("salary changed succffuly");
+      print("____________________________________");
     }
   }
 }

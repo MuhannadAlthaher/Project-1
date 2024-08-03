@@ -14,6 +14,8 @@ changeJobDescriptions(List<Employee> employyes) {
       var jobDescrtipon = stdin.readLineSync()!;
       elment.jobDescription =
           jobDescrtipon; //here the elemnt in pleace of the object that we need to change with the new varible
+      print("decritpon changed succffuly");
+      print("____________________________________");
     }
   }
 }
