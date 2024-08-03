@@ -21,6 +21,7 @@ void main() {
     print("4.Update  emploeyy postions");
     print("5.Delte  emploeyy");
     print("6.change permissions");
+    print("7.change job descriptions ");
     print("Enter q to close the app");
     String input = stdin.readLineSync()!;
     if (input == "1" ||
@@ -28,7 +29,8 @@ void main() {
         input == "3" ||
         input == "4" ||
         input == "5" ||
-        input == "6") {
+        input == "6" ||
+        input == "7") {
       switch (input) {
         case "1":
           insertNewEmployee(
@@ -48,6 +50,8 @@ void main() {
               employees); //here i used the funtion from UpdatePostions file kindly check the fail to understant the function
         case "6":
           changePermissions(employees);
+        case"7":
+          
       }
     } else if (input == "q") {
       break;
