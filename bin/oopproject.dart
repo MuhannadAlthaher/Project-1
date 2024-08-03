@@ -26,7 +26,8 @@ void main() {
     print("7.change job descriptions ");
     print("Enter q to close the app");
     String input = stdin.readLineSync()!;
-    if (input == "1" ||
+    if (input ==
+            "1" || //checking if the user input correct it will pass the comdtion
         input == "2" ||
         input == "3" ||
         input == "4" ||
@@ -34,6 +35,7 @@ void main() {
         input == "6" ||
         input == "7") {
       switch (input) {
+        //Sitched the user input
         case "1":
           insertNewEmployee(
               employees); //here i used the funtion from InsertNewemployee file kindly check the fail to understant the function
@@ -57,6 +59,7 @@ void main() {
               employees); //here i used the funtion from changeJobDescriptions file kindly check the fail to understant the function
       }
     } else if (input == "q") {
+      //if the input was q it will break the app and
       break;
     }
   }
